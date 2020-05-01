@@ -1,0 +1,23 @@
+package testSpace.com;
+import java.util.Scanner;
+public class test{
+    public static void main(String [] args){
+		String[] arr={"hello","world","java","html","oracle",
+		"apple","orange","banana","red","green"};
+		Scanner sc = new Scanner(System.in);
+		String word = sc.nextLine();
+        System.out.println(isFind(arr,word)?"Yes":"No");
+		}
+        
+		public static boolean isFind(String [] arr,String word){
+		boolean isFlag=false;
+		for(int i=0;i<arr.length;i++){
+		if(word.equals(arr[i])){
+		isFlag=true;
+		break;
+		}
+	}
+		return isFlag;
+}
+		
+	}
